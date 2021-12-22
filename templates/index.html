@@ -1,0 +1,43 @@
+{%extends "base.html" %}
+
+{% block content %}
+<h1>Dodaj novog učenika</h1>
+
+<form action="/" method="post">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Ime i prezime</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="name" id="inputEmail3" placeholder="Unesite ime i prezime učenika">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Godina rođenja</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputPassword3" name="godina" placeholder="Unesite godinu rođenja učenika">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Smjer</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="smjer" id="inputPassword3" placeholder="Unesite smjer učenika">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Razred</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="razred" id="inputPassword3" placeholder="Unesite razred učenika">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Prosjek</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="prosjek" id="inputPassword3" placeholder="Unesite prosjek ocjena učenika">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+<footer>
+<p>Izradio Toni Lapov {{year}}</p>
+</footer>
+{% endblock content %}
